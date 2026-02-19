@@ -7,7 +7,7 @@ st.set_page_config(page_title="Portfolio Nianguiri Dembele", layout="wide")
 st.markdown("""
     <style>
         [data-testid="stSidebar"] {
-            background-color: #002366;
+            background-color: #b0bec5;
             color: white;
         }
         [data-testid="stSidebar"] * {
@@ -18,8 +18,7 @@ st.markdown("""
 
 # 3. BARRE LATÉRALE (SIDEBAR - Environ 30% de l'écran par défaut)
 with st.sidebar:
-    # Remplacer 'votre_photo.jpg' par le chemin de votre image
-    st.image("https://via.placeholder.com/150", caption="Nianguiri Dembele", width=150)
+    st.image("DEMBELE.JPG", caption="Nianguiri Dembele", width=150)
     st.title("NIANGUIRI DEMBELE")
     st.write("📧 bdembele981@gmail.com")
     st.write("🎓 Technicien supérieur en Géomatique")

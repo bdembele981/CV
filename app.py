@@ -21,7 +21,7 @@ st.markdown("""
 """)
 
 
-st.header("Projets académiques")                                                                                                                 st.markdown("""
+st.header("Projets académiques")                                                                                                                 
 - *Cartographie SIG* : Collecte, traitement et visualisation de données géospatiales  
 - *Programmation Python* : Développement d’applications scientifiques et analyse de données  
 - *Dessin de plan* : Conception d’un plan architectural complet  

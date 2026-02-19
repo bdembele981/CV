@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Profil Professionnel")
+st.title("ETUDIANT EN GEOMATIQUE")
 
 st.write("""
 Technicien supérieur en géomatique, je suis en mesure de fournir des cartes thématiques, topographiques .es SIG,

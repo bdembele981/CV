@@ -22,11 +22,6 @@ st.markdown("""
 
 # 3. BARRE LATÉRALE (SIDEBAR)
 with st.sidebar:
-    # On vérifie si l'image existe pour éviter les erreurs au lancement
-    try:
-        st.image("DEMBELE.JPG", width=200)
-    except:
-        st.info("Image 'DEMBELE.JPG' non trouvée (placez-la dans le même dossier que le script).")
         
     st.title("NIANGUIRI DEMBELE")
     st.write("📧 *Email :* bdembele981@gmail.com")

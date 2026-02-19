@@ -46,6 +46,6 @@ Mettre en compétences au service du port de ndayane pour réaliser les infrastr
 """)
 
 st.sidebar.title("NIANGUIRI DEMBELE")
-st.sidebar.write("bdembele981@GAMIL.com.com")
+st.sidebar.write("bdembele981@gmail.com")
 st.sidebar.write("Technicien supérieur en Géomatique")
-st.sidebar.write("  Pikine, Dakar - Sénégal")
+st.sidebar.write("  Pikine, Dakar , Sénégal")

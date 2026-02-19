@@ -1,31 +1,42 @@
 import streamlit as st
 
-# 1. Configuration de la page
+# 1. Configuration de la page (Toujours en premier)
 st.set_page_config(page_title="Portfolio Nianguiri Dembele", layout="wide")
 
-# 2. CSS pour la couleur bleu foncé de la sidebar
+# 2. CSS pour la couleur GRIS de la sidebar (#b0bec5)
 st.markdown("""
     <style>
         [data-testid="stSidebar"] {
             background-color: #b0bec5;
-            color: white;
         }
+        /* On change la couleur du texte en noir pour la lisibilité sur le gris clair */
         [data-testid="stSidebar"] * {
-            color: white !important;
+            color: #000000 !important;
+        }
+        /* Style pour arrondir la photo de profil */
+        .stImage img {
+            border-radius: 10px;
         }
     </style>
 """, unsafe_allow_html=True)
 
-# 3. BARRE LATÉRALE (SIDEBAR - Environ 30% de l'écran par défaut)
+# 3. BARRE LATÉRALE (SIDEBAR)
 with st.sidebar:
-    st.image("DEMBELE.JPG", caption="Nianguiri Dembele", width=150)
+    # On vérifie si l'image existe pour éviter les erreurs au lancement
+    try:
+        st.image("DEMBELE.JPG", caption="Nianguiri Dembele", width=200)
+    except:
+        st.info("Image 'DEMBELE.JPG' non trouvée (placez-la dans le même dossier que le script).")
+        
     st.title("NIANGUIRI DEMBELE")
-    st.write("📧 bdembele981@gmail.com")
-    st.write("🎓 Technicien supérieur en Géomatique")
-    st.write("📍 Pikine, Dakar - Sénégal")
+    st.write("📧 *Email :* bdembele981@gmail.com")
+    st.write("🎓 *Poste :* Technicien supérieur en Géomatique")
+    st.write("📍 *Localisation :* Pikine, Dakar - Sénégal")
+    st.markdown("---")
+    st.write("Projet : Port de Ndayane")
 
 # 4. CONTENU PRINCIPAL
-st.title("🎓 ETUDIANT EN GEOMATIQUE")
+st.title("🎓 ÉTUDIANT EN GÉOMATIQUE")
 
 st.write("""
 Technicien supérieur en géomatique, je suis en mesure de fournir des cartes thématiques, topographiques et SIG. 
@@ -43,7 +54,6 @@ st.markdown("""
 """)
 
 st.header("📚 Projets académiques") 
-# Correction ici : ajout de st.markdown
 st.markdown("""
 - *Cartographie SIG* : Collecte, traitement et visualisation de données géospatiales  
 - *Programmation Python* : Développement d’applications et analyse de données  

@@ -2,24 +2,12 @@ import streamlit as st
 
 st.title("Profil Professionnel")
 
-st.write(
-"""
+st.write("""
 Technicien supérieur en géomatique, je suis en mesure de fournir des cartes thématiques, topographiques .es SIG,
 la programmation et l’analyse géographique, je m’intéresse particulièrement
 à la gestion territoriale et aux applications environnementales.
-"""import streamlit as st
+""")
 
-st.title("Profil Professionnel")
-
-st.write(
-"""
-Technicien supérieur en géomatique, je combine rigueur technique,
-analyse spatiale et traitement de données pour produire des solutions
-cartographiques fiables et opérationnelles. Passionnée par les SIG,
-la programmation et l’analyse géographique, je m’intéresse particulièrement
-à la gestion territoriale et aux applications environnementales.
-"""
-)
 st.header("Compétences")
 
 st.markdown("""
